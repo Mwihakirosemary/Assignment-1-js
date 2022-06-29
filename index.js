@@ -15,7 +15,7 @@ function iterate(){
         }
   }
 }
-// iterate()
+iterate()
 
 // 2. Write a JavaScript program to sum the multiples of 3 and 5 under 1000.
 
@@ -24,7 +24,7 @@ for (n = 0;n < 1000;n++){
     if (n % 3 == 0 && n % 5 == 0){
         sum += n;
     }
-    // console.log(sum)
+    console.log(sum)
 }
 // 3. Write a JavaScript for loop that will iterate from 0 to 20. For each iteration, it will
 // check if the current number is odd or even, and display a message to the screen.
@@ -35,11 +35,11 @@ for (n = 0;n < 1000;n++){
 
 for(i = 0;i <= 20; i++){
     if(i % 2 === 0) {
-      // console.log(i+' '+"is even")
+      console.log(i+' '+"is even")
 
     }
     
-    // else console.log(i+' '+"is odd")
+    else console.log(i+' '+"is odd")
     
 }
 // 4. Write a JavaScript conditional statement to find the largest of five numbers in the
@@ -68,18 +68,18 @@ function two_nums (j,k){
   }
 
 }
-// two_nums(10,40)
+two_nums(10,40)
 // function two_nums(10,40)
 // Write a JavaScript program to find leap years from 2000 to 2022
 // program to check leap year
 
 function checkLeapYear(l) {
-  for(l = 0;l < 2022; l++)
-  if ((0 == l % 4) && (0 != l % 100)) {
-      console.log(l + ' is a leap year');
+  for(l = 2000;l <= 2022; l++)
+  if ((0 == l % 4) && (0 != l % 100) || 0 == l % 400) {
+      console.log(l + ' ' + 'is a leap year');
   } else {
-      console.log(l + ' is not a leap year');
+      console.log(l + ' ' +'is not a leap year');
   }
 }
 
-// checkLeapYear();
+
